@@ -1,8 +1,8 @@
 <?php
-  $hostname = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "chatapp";
+  $hostname = "db4free.net";
+  $username = "crtadmin";
+  $password = "crtadmin";
+  $dbname = "chatadmin";
 
   $conn = mysqli_connect($hostname, $username, $password, $dbname);
   if(!$conn){
