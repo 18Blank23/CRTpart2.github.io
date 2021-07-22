@@ -4,6 +4,6 @@ $conn = mysql_connect('remotesql.com', 'cix3dqBVsU', 'nn8hdgwJTx');
     {
 	 die('Could not connect: ' . mysql_error());
 	}
-	mysql_select_db("chatapp", $conn);
+	mysql_select_db("cix3dqBVsU", $conn);
 	
 
