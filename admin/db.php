@@ -1,5 +1,5 @@
 <?php
-$conn = mysql_connect('remotesql.com', 'cix3dqBVsU', 'nn8hdgwJTx');
+$conn = mysql_connect('remotemysql.com', 'cix3dqBVsU', 'nn8hdgwJTx');
 	 if (!$conn)
     {
 	 die('Could not connect: ' . mysql_error());
