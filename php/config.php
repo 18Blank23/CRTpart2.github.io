@@ -1,8 +1,8 @@
 <?php
-  $hostname = "db4free.net";
-  $username = "crtadmin";
-  $password = "crtadmin";
-  $dbname = "chatadmin";
+  $hostname = "remotemysql.com";
+  $username = "cix3dqBVsU";
+  $password = "nn8hdgwJTx";
+  $dbname = "cix3dqBVsU";
 
   $conn = mysqli_connect($hostname, $username, $password, $dbname);
   if(!$conn){
