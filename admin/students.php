@@ -203,9 +203,9 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <?php
-                      include 'db.php';
+                      include 'php/config.php';
 
-                      $result = mysql_query("SELECT * FROM users ");
+                      $result = mysqli_query($conn,"SELECT * FROM users ");
                       echo "<div id='data'>";
                       echo "<table  class=\"table\" bgcolor='#fff'>
                       <tr>
@@ -226,7 +226,7 @@
                     </tr>
                   </tfoot>";
 
-                      while($row = mysql_fetch_array($result))
+                      while($row = mysqli_fetch_array($result))
                         {
                     
                           echo "<tr>";
