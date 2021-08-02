@@ -325,7 +325,7 @@ Enter Message here...
 
 </html>
 <?php 
-include 'db.php';
+include 'php/config.php';
 //$message = $_POST['message'];
 $outgoing = "153327572";
 if (isset($_POST['send']))
@@ -337,12 +337,12 @@ if (isset($_POST['send']))
         //dito yung code para sa pag send
         foreach ($_POST['course'] as $course) 
           {
-            $result = mysql_query("SELECT * FROM users Where course = '$course'");
-            while($getooo = mysql_fetch_array($result))
+            $result = mysqli_query($conn,"SELECT * FROM users Where course = '$course'");
+            while($getooo = mysqli_fetch_array($result))
               {
                 $unique_id = $getooo['unique_id'];
 
-                mysql_query("INSERT INTO messages (incoming_msg_id, outgoing_msg_id,msg)
+                mysqli_query($conn,"INSERT INTO messages (incoming_msg_id, outgoing_msg_id,msg)
                   VALUES('$unique_id', '$outgoing', '$_POST[message]')");
 
 
