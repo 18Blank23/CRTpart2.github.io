@@ -1,9 +1,0 @@
-<?php
-$conn = mysql_connect('remotemysql.com', 'cix3dqBVsU', 'nn8hdgwJTx');
-	 if (!$conn)
-    {
-	 die('Could not connect: ' . mysql_error());
-	}
-	mysql_select_db("cix3dqBVsU", $conn);
-	
-
